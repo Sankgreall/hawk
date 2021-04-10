@@ -21,7 +21,6 @@ PowerShellVersion = '5.0'
 
 # Modules that must be imported into the global environment prior to importing this module
 RequiredModules = @(
-    @{ModuleName = 'PSAppInsights'; ModuleVersion = '0.9.6'; },
     @{ModuleName = 'CloudConnect'; ModuleVersion = '1.1.2'; },
     @{ModuleName = 'RobustCloudCommand'; ModuleVersion = '1.1.3'; }
     )

@@ -1,0 +1,1 @@
+Import-Module -Name .\Hawk.psd1 -Force

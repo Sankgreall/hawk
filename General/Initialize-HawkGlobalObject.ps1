@@ -80,26 +80,11 @@ Function Initialize-HawkGlobalObject
 
         Return $Folder
     }
-
-    Function New-ApplicationInsight
-    {
-
-        # Initilize Application Insights client
-        $insightkey = "b69ffd8b-4569-497c-8ee7-b71b8257390e"
-        if ($Null -eq $Client)
-        {
-            $Client = New-AIClient -key $insightkey
-        }   
-    }
-
  
     ### Main ###
 
     Write-Host "`n########### JustGiveMeAuditLogsPlease ###########"
-
-    # Setup Applicaiton insights
-    New-ApplicationInsight
-    
+  
     # Test if we have a connection to O365
     Test-MSOLConnection
     Test-EXOConnection	

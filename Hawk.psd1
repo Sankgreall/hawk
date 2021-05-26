@@ -22,7 +22,8 @@ PowerShellVersion = '5.0'
 # Modules that must be imported into the global environment prior to importing this module
 RequiredModules = @(
     @{ModuleName = 'CloudConnect'; ModuleVersion = '1.1.2'; },
-    @{ModuleName = 'RobustCloudCommand'; ModuleVersion = '1.1.3'; }
+    @{ModuleName = 'RobustCloudCommand'; ModuleVersion = '1.1.3'; },
+    @{ModuleName = 'ExchangeOnlineManagement'; ModuleVersion = '2.0.4'; }
     )
 
 

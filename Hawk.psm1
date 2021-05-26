@@ -355,7 +355,7 @@ Function Test-EXOConnection
         if (($Expires - ((get-date).AddMinutes(15)) -le 0)) 
         {
             Write-Host "Token Near Expiry - rebuilding EXO connection"
-            Connect-EXO
+            Connect-ExchangeOnline
         }
     }
 
@@ -370,7 +370,7 @@ Function Test-EXOConnection
         # Connect to EXO if we couldn't find the command
         Write-Host "Not Connected to Exchange Online"
         Write-Host "Connecting to EXO using CloudConnect Module"
-        Connect-EXO
+        Connect-ExchangeOnline
     }
 }
 
